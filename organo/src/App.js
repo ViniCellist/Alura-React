@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Banner from './components/Banner/Banner';
+import Banner from './components/Banner';
 import Form from './components/Form/Form';
 import Time from './components/Time/Time';
 
@@ -203,7 +203,7 @@ function App() {
 
   return (
     <div className="App">
-      <Banner />
+      <Banner enderecoImagem='/images/banner.png' textoAlternativo='O banner principal da página do Organo."'/>
       <Form times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)} />
 
       {times.map(time => <Time 

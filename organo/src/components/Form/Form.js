@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Button from '../Button/Button';
+import Button from '../Button/index.tsx';
 import FieldText from '../FieldText/FieldText';
 import ListSuspend from '../ListSuspend/ListSuspend';
 import './Form.css';
@@ -60,7 +60,9 @@ function Form(props) {
                     valor={time}
                     aoAlterado={valor => setTime(valor)}
                 />
-                <Button texto="Criar Card" />
+                <Button texto="Criar Card">
+                    Criar Card
+                </Button>
             </form>
         </section>
     )

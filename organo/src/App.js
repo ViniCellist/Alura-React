@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Banner from './components/Banner';
-import Form from './components/Form/Form';
+import Banner from './components/Banner/index.tsx';
+import Form from './components/Form/index.tsx';
 import Time from './components/Time/index.tsx';
 
 function App() {

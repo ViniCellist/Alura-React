@@ -1,17 +1,22 @@
 import { useState } from 'react';
-import Button from '../Button/index.tsx';
-import ListSuspend from '../ListSuspend/index.tsx';
-import FieldText from '../FieldText/index.tsx';
+import Button from '../Button/index';
+import ListSuspend from '../ListSuspend/index';
+import FieldText from '../FieldText/index';
 import './Form.css';
+import { IColaborador } from '../../shared/interfaces/IColaborador.js';
 
+interface FormularioProps {
+    aoColaboradorCadastrado: (colaborador: IColaborador) => void
+    times: string[]
+}
 
-function Form(props) {
+function Form(props: FormularioProps) {
     const [nome, setNome] = useState('');
     const [cargo, setCargo] = useState('');
     const [imagem, setImagem] = useState('');
     const [time, setTime] = useState('');
 
-    const aoSalvar = (event) => {
+    const aoSalvar = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         props.aoColaboradorCadastrado({
             nome,
@@ -46,7 +51,6 @@ function Form(props) {
                 />
 
                 <FieldText 
-
                     label="Imagem" 
                     placeholder="Digite o endereço da imagem"
                     valor={imagem}
@@ -60,7 +64,7 @@ function Form(props) {
                     valor={time}
                     aoAlterado={valor => setTime(valor)}
                 />
-                <Button texto="Criar Card">
+                <Button>
                     Criar Card
                 </Button>
             </form>

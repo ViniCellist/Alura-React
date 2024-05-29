@@ -29,7 +29,7 @@ function Form(props: FormularioProps) {
         setImagem('');
         setTime('');
     }
-
+    
     return (
         <section className="form-container">
             <form onSubmit={aoSalvar} >

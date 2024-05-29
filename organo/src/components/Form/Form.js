@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Button from '../Button/index.tsx';
-import FieldText from '../FieldText/FieldText';
-import ListSuspend from '../ListSuspend/ListSuspend';
+import ListSuspend from '../ListSuspend/index.tsx';
+import FieldText from '../FieldText/index.tsx';
 import './Form.css';
 
 

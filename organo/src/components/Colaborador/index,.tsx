@@ -1,6 +1,13 @@
 import './Colaborador.css';
 
-function Colaborador({nome, imagem, cargo, corDeFundo}) {
+interface ColaboradorProps {
+    nome: string
+    imagem: string
+    cargo: string
+    corDeFundo: string
+}
+
+function Colaborador({nome, imagem, cargo, corDeFundo}: ColaboradorProps) {
 
     return(
         <div className="colaborador">

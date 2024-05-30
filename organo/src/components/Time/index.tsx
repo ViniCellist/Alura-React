@@ -1,3 +1,4 @@
+import React from 'react';
 import { IColaborador } from '../../shared/interfaces/IColaborador';
 import Colaborador from '../Colaborador/index,';
 import './Time.css';
@@ -14,7 +15,7 @@ function Time(props: TimeProps) {
     const css = { backgroundColor: props.corSecundaria };
 
     return(
-        (props.colaboradores.length) > 0 ? <section className="time-sec" style={css}>
+        (props.colaboradores.length > 0) ? <section className="time-sec" style={css}>
             <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
             <div className='colaboradores'>
                 {props.colaboradores.map(colaborador => 
@@ -27,7 +28,7 @@ function Time(props: TimeProps) {
                     />)}
             </div>
         </section>
-        : ''
+        : <React.Fragment></React.Fragment>
     )
 }
 

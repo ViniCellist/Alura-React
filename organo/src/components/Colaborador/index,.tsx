@@ -5,9 +5,10 @@ interface ColaboradorProps {
     imagem: string
     cargo: string
     corDeFundo: string
+    data: string
 }
 
-function Colaborador({nome, imagem, cargo, corDeFundo}: ColaboradorProps) {
+function Colaborador({nome, imagem, cargo, corDeFundo, data}: ColaboradorProps) {
 
     return(
         <div className="colaborador">
@@ -17,6 +18,7 @@ function Colaborador({nome, imagem, cargo, corDeFundo}: ColaboradorProps) {
             <div className='rodape'>
                 <h4>{nome}</h4>
                 <h5>{cargo}</h5>
+                <h5>{new Date(data).toLocaleDateString()}</h5>
             </div>
         </div>
     )

@@ -2,6 +2,8 @@
  
 This is a solution to the [React: desenvolvendo com JavaScript](https://cursos.alura.com.br/course/react-desenvolvendo-javascript). Alura Front-end school help you improve your coding skills by building realistic projects.  
 
+Refactored project in [React: migrando para TypeScript](https://cursos.alura.com.br/course/react-migrando-typescript) using typescript language
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -45,6 +47,7 @@ Used HTML5, CSS3, JavaScript and React.
 - CSS3
 - JavaScript
 - React
+- TypeScript
 
 ### What I learned
 
@@ -59,7 +62,8 @@ First contact with React framework usage and components styles.
 - [HTML 5](https://developer.mozilla.org/en-US/docs/Web) - HTML documentation.
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS) - CSS documentation.
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Bootstrap documentation.
-- [React](https://legacy.reactjs.org/docs/getting-started.html)
+- [React](https://legacy.reactjs.org/docs/getting-started.html) - React documentation
+- [TypeScript](https://www.typescriptlang.org/docs/) - TypeScript documentation
 
 ## Author
 
